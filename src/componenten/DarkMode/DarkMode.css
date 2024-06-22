@@ -1,0 +1,33 @@
+.darkmode_div {
+  max-width: 20px;
+  position: relative;
+}
+
+.darkmode_div svg {
+  fill: var(--white);
+}
+
+nav .darkmode_div .color_modes {
+  position: absolute;
+  flex-direction: column;
+  gap: 9px;
+  padding: 30px 4px 8px 4px;
+  background: linear-gradient(var(--black), rgba(134, 134, 134, 0.15));
+  border-radius: 0 0 10px 10px;
+  width: 130%;
+  right: -3px;
+  border-inline: 0.5px solid
+    linear-gradient(var(--black), rgba(134, 134, 134, 0.15));
+  border-bottom: 1px solid rgba(134, 134, 134, 0.35);
+  display: none;
+  margin: 0;
+}
+
+.color_modes img {
+  cursor: pointer;
+}
+
+.color_none {
+  display: flex !important;
+  animation: popup-open 0.4s ease-in;
+}

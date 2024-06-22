@@ -1,0 +1,11 @@
+import { createContext } from "react";
+export const LoadingContext = createContext();
+export const AllCountriesContext = createContext();
+export const AllLeaguesContext = createContext();
+export const AllTeamsContext = createContext();
+export const AllPlayersContext = createContext();
+export const SearchValueContext = createContext();
+export const CountryPopUpContext = createContext();
+export const SportPopUpContext = createContext();
+export const CountriesFilterOpenContext = createContext();
+export const SportsFilterOpenContext = createContext();

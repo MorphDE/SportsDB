@@ -1,0 +1,127 @@
+.player-name {
+  position: absolute;
+  top: 7%;
+  left: 40%;
+  transform: translateX(-50%);
+  color: var(--red);
+  display: flex;
+  font-size: 96px;
+  font-family: Montserrat-bold;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.player-infos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  padding-top: 100px;
+  position: sticky;
+  top: 10px;
+  padding-bottom: 5%;
+  margin-inline: auto;
+  animation: fade-up 0.9s;
+}
+
+div .player-flex {
+  align-items: flex-start;
+  padding-top: 200px;
+  gap: 12.7vw;
+  /* overflow: hidden; */
+  max-width: 1600px;
+  margin-inline: auto;
+}
+
+.player-details {
+  max-width: 700px;
+  line-height: 180%;
+}
+
+.player-desc {
+  color: var(--red);
+  margin-top: 50px;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.player-img {
+  animation: fade-up 0.5s;
+}
+
+.player-img img {
+  max-width: 40vw;
+  margin-top: -200px;
+}
+
+.detail-text {
+  color: var(--red);
+}
+
+.player-socials a {
+  color: var(--red);
+  text-decoration: none;
+  margin: 20px;
+}
+
+.player-socials {
+  margin-top: 50px;
+}
+
+.fanarts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.fanarts img {
+  margin-top: 100px;
+  max-width: 350px;
+  box-shadow: 0px 0px 10px black;
+}
+
+@media only screen and (max-width: 938px) {
+  div .player-flex {
+    gap: 3vw;
+  }
+  .player-name {
+    top: 4%;
+  }
+  .player-img img {
+    max-width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .player-img img {
+    max-width: 98%;
+  }
+  .player-name {
+    text-align: center;
+    left: 50%;
+    top: 3%;
+    font-size: clamp(2.5rem, -1.8478rem + 21.7391vw, 5.625rem);
+  }
+  .player-socials {
+    margin-inline: auto;
+    width: max-content;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .player-socials {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .player-details {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  div .player-flex {
+    gap: 200px;
+  }
+}
